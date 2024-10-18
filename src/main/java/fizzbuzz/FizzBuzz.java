@@ -11,7 +11,6 @@ public class FizzBuzz {
 
     public static String fizzBuzz(int num) {
         String numStr = String.valueOf(num);
-
         boolean divisiblePor3 = num % 3 == 0 || numStr.contains("3");
         boolean divisiblePor5 = num % 5 == 0 || numStr.contains("5");
 
@@ -26,3 +25,4 @@ public class FizzBuzz {
         }
     }
 }
+
