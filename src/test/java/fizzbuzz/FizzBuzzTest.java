@@ -27,7 +27,7 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(53), is("FizzBuzz")); 
     }
 
-    @Test
+        @Test
     public void testNumber() {
         assertThat(FizzBuzz.fizzBuzz(1), is("1"));
         assertThat(FizzBuzz.fizzBuzz(4), is("4"));
