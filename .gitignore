@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+
+# Python
+*.pyc
+__pycache__
+
+# Java
+*.class
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+target/
