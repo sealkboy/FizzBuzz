@@ -24,5 +24,16 @@ public class FizzBuzz {
             return String.valueOf(num);
         }
     }
-}
 
+    public static String fizzBuzz2(int number) {
+        String numberStr = Integer.toString(number);
+
+        if (numberStr.contains("3")) {
+            return "Fizz";
+        } else if (numberStr.contains("5")) {
+            return "Buzz";
+        } else {
+            return fizzBuzz(number);
+        }
+    }
+}

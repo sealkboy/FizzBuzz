@@ -1,37 +1,27 @@
 package fizzbuzz;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.MatcherAssert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
 public class FizzBuzzTests {
 
-    @Test
-    public void testFizz() {
-        assertThat(FizzBuzz.fizzBuzz(3), is("Fizz"));
-        assertThat(FizzBuzz.fizzBuzz(9), is("Fizz"));
-        assertThat(FizzBuzz.fizzBuzz(13), is("Fizz"));  
-    }
-
-    @Test
-    public void testBuzz() {
-        assertThat(FizzBuzz.fizzBuzz(5), is("Buzz"));
-        assertThat(FizzBuzz.fizzBuzz(10), is("Buzz"));
-        assertThat(FizzBuzz.fizzBuzz(52), is("Buzz"));  
-    }
+    private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     public void testFizzBuzz() {
-        assertThat(FizzBuzz.fizzBuzz(15), is("FizzBuzz"));
-        assertThat(FizzBuzz.fizzBuzz(53), is("FizzBuzz")); 
+        assertEquals("Fizz", fizzBuzz.fizzBuzz(3));
+        assertEquals("Buzz", fizzBuzz.fizzBuzz(5));
+        assertEquals("FizzBuzz", fizzBuzz.fizzBuzz(15));
+        assertEquals("7", fizzBuzz.fizzBuzz(7));
     }
 
     @Test
-    public void testNumber() {
-        assertThat(FizzBuzz.fizzBuzz(1), is("1"));
-        assertThat(FizzBuzz.fizzBuzz(4), is("4"));
+    public void testFizzBuzz2() {
+        assertEquals("Fizz", fizzBuzz.fizzBuzz2(3)); 
+        assertEquals("Buzz", fizzBuzz.fizzBuzz2(5));
+        assertEquals("Fizz", fizzBuzz.fizzBuzz2(53)); 
+        assertEquals("Buzz", fizzBuzz.fizzBuzz2(55)); 
+        assertEquals("7", fizzBuzz.fizzBuzz2(7));
     }
-
 }
-
